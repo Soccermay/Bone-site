@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(12, 12, 60);
+    height: 117vh;
+}
+
+header {
+    width: 92%;
+    height: 75px;
+    margin-left: 2.5%;
+    margin-top: 50px;
+    background-color: salmon;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 0.7rem;
+}
+
+.header {
+    font-size: 45px;
+    text-decoration: none;
+    padding: -40px 0;
+}
+
+nav {
+    width: 92%;
+    height: 70px;
+    background-color: aquamarine;
+    margin-left: 3.2%;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.nav {
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+aside {
+    width: 20%;
+    height: 60px;
+    background-color: pink;
+    margin-left: 3.1%;
+    margin-top: 17px;
+    border-radius: 0.7rem;
+    font-size: 31px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 250px 0;
+    float: left;
+}
+
+main {
+    width: 70%;
+    height: 60px;
+    background-color: lightsteelblue;
+    margin-left: 25%;
+    padding: 250px 0;
+    margin-top: 16px;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 38px;
+    margin-top: -230px;
+    margin-bottom: 120px;
+    font-weight: none;
+}
+
+article {
+    border: 3px solid black;
+    font-size: 50px;
+    margin-top: -70px;
+    background-color: dodgerblue;
+    border-radius: 0.7rem;
+    width: 95%;
+    margin-left: 1.9%;
+    outline: "";
+}
+
+figure {
+    border: 2px solid black;
+    font-size: 30px;
+    width: 89%;
+    background-color: bisque;
+    border-radius: 0.8rem;
+    padding: 20px 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+p {
+    border: 2px solid black;
+    font-size: 25px;
+    width: 89%;
+    margin-left: 4.8%;
+    background-color: greenyellow;
+    border-radius: 0.6rem;
+    padding: 22px 0;
+}
+
+section {
+    border: 2px solid black;
+    width: 95%;
+    font-size: 35px;
+    background-color: darksalmon;
+    border-radius: 0.7rem;
+    margin-top: 15px;
+    margin-left: 2%;
+    font-family: fantasy;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: crimson;
+    transition: 70s;
+    transform: rotate(4.3deg);
+    z-index: 3;
+}
+
+footer {
+    width: 92%;
+    background-color: rgb(121, 104, 219);
+    margin-left: 3%;
+    margin-top: 23px;
+    font-size: 31px;
+    text-align: center;
+    border-radius: 0.7rem;
+    padding: 30px 0;
+}
+
+/*Krabby Patty and Plankton */
+.krabby {
+    border-radius: 50%;
+    margin-left: 40px;
+    float: right;
+    margin-top: -40px;
+    animation: Pat 10s ease-in-out infinite;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@keyframes Pat { 
+    0%{transform: scale(1.2); 
+            transform: translateX(5rem);}
+    20%{transform: scale(1.8);
+            transform: translateY(34rem);}
+    40%{transform: scale(2.3);
+            transform: translateZ(5rem);}
+    60%{transform: scale(3.2);
+            transform: translate3d(5rem);}
+    80%{transform: scale(4.0);}
+}
+
+.Plankton {
+    border-radius: 20% 30% 2px 20%;
+    image-orientation: from-image;
+    float: left;
+    image-rendering: optimizeSpeed;
+    box-shadow: 2px 4px 9px blue,
+               inset 2px 3px 8px red,
+                2px 2px 8px green,
+                2px 3px 9px yellow;
+    margin-bottom: 120px;
+    filter: brightness(70%);
+    fill: rgb(225, 128, 0);
+    cursor: pointer;
+    animation: Evil 10s ease-in infinite;
+}
+
+@keyframes Evil {
+    0%{
+        transform: translateX(60rem);
+    }
+    50%{
+        transform: translateY(1rem);
+    }
+    
+}
+

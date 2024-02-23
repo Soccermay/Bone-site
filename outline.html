@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <link rel="stylesheet" href="outline.css">
+</head>
+<body>
+    <em>
+    <!--Whole outline of HTML-->
+        <header>
+            <h3 class="header">Krusty Krab</h3>
+        </header>
+        <nav>
+            <h3 class="nav">The Ultimate Fry Cook</h3>
+        </nav>
+
+        <aside>
+            This will have all the ingredients to the krabby patty burger
+        </aside>
+
+        <main>
+            <h5>The animation of a Krabby Patty</h5>
+            <article>
+                Facts 
+                <figure>The Krabby Patty
+                    <img onclick="Krusty()" src="images/Krabby.jpg" class="krabby" alt="Patty" width="85px" height="85px">
+                </figure>
+                <p>The Krabby Patty currently cost around $9. </p>
+            </article>
+            <section>
+                Plankton will never steal the secret<br>forumla, NEVER!!
+            </section>
+        </main>
+
+        <footer>
+            ©Copyright
+            <div id="Plankton"><img src="images/Plankton.png" class="Plankton" alt="Plankton" width="150px" height="150px"></div>
+        </footer>
+    <!--End of outline-->
+</em>
+
+
+<!--JavaScript-->
+<script>
+
+    function Chum(wife, food) {
+        this.wife = wife;
+        this.food = true;
+
+        return go(
+            this.wife + this.food
+        )
+
+        alert('Plankton');
+    }
+
+
+
+    window.onload = function() {
+        var el = document.getElementById('Plankton');
+        el.onclick = Chum;
+    }
+
+    function Krusty() {
+        let name = "Krabs";
+
+        for(let i=0; i < 50; i+=4) {
+            document.write(name);
+        }
+    }
+</script>
+
+</body>
+</html>

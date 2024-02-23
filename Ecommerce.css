@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(233,23,23), rgb(14, 26, 206));
+}
+
+.circle {
+    height: 30%;
+    width: 20%;
+    border: none;
+    border-radius: 27% 43% 41% 53%;
+    background-image: linear-gradient(rgb(81, 211, 26), rgb(196, 215, 29));
+    margin-top: 40px;
+    margin-left: 20px;
+    float: left;
+}
+
+.square {
+    height: 35%;
+    width: 50%;
+    border: none;
+    border-radius: 21% 31% 13% 8%;
+    background-color: darkred;
+    margin: 64px 93px 40px 20px;
+    animation: messi 3.5s ease-in-out infinite;
+    box-shadow: 2px 4px 7px lightcoral
+                    4px 2px 8px lightblue
+                    inset 3x 2px 9px lightgoldenrodyellow
+                    inset 4px 3px 9px lightgreen
+                    3px 5px 8px lightseagreen;
+}
+
+@keyframes messi {
+    0% {
+        transform: rotate(0deg);
+        opacity: 2;
+        background-color: chocolate;
+    }
+
+    50%{
+        transform: translateY(90px);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-sizing: border-box;
+    }
+    
+}
+
+.container {
+    margin-top: 40px;
+    font-size: 31px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
+    background-color: cadetblue;
+    width: 75%;
+    padding: 25px;
+    border-radius: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: ghostwhite;
+    margin-left: 170px;
+    font-family: 'Butcherman', cursive;
+}
+
+.text {
+    font-size: 30px;
+    font-family: 'Butcherman', cursive;
+    color: azure;
+    text-align: center;
+    line-height: 2.3;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    word-spacing: 8.9px;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-shadow: 4px 2px 9px lightsalmon
+                5px 3px 9px blue
+                3px 3px 9px green;
+    border: 3px solid black;
+    width: 70%;
+    margin-left: 320px;
+    background-color: rgb(26, 14, 202);
+    border-radius: 2rem;
+}
+
+.heading {
+    font-size: 34px;
+    margin: 20px 10px;
+    text-align: center;
+    color: beige;
+    font-family: fantasy;
+    letter-spacing: 2.3;
+    word-spacing: 2.3;
+}
+
+.tbl {
+    border-collapse: collapse;
+    font-size: 45px;
+    margin-top: 6pc;
+    margin-left: 9pc;
+    border: 1pc solid white;
+    border-left-color: darkblue;
+    border-right-color: darkblue;
+}
+
+table th { 
+    border: 4px solid ghostwhite;
+    columns: 10px;
+    row-gap: 10px;
+    color: rgb(203, 69, 20);
+    padding: 14px;
+}
+
+table tr td{
+    border: 4.2px solid green;
+    padding: 20px;
+}
+
+footer {
+    background-color: darkgray;
+    height: 9pc;
+    margin: 50px 0;
+}
+
+footer h5 {
+    font-size: 30px;
+    text-align: center;
+    padding: 2.3pc 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*button class*/
+.buton {
+    padding: 3pc 0;
+    border: none;
+    box-shadow: 2px 0px 6px #efec,
+                2px 0px 8px #d3fe,
+                2px 0px 10px rgba(218, 93, 59, 0.867);
+    font-size: 22px;
+    margin-top: 30px;
+    border-radius: 3rem;
+    width: 20%;
+    transform: rotate(5.4deg);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buton:hover {
+    transform: scale(1.2);
+    background-color: darkgrey;
+    color: gainsboro;
+}
